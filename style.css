@@ -132,6 +132,9 @@ body {
   text-align: center;
 }
 
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
 
 .header {
   position: fixed;
@@ -189,7 +192,9 @@ body {
   color: #407bff;
 }
 
-
+/*-----------------------------------*\
+  #HERO
+\*-----------------------------------*/
 
 .hero {
   padding: 125px 0 80px;
@@ -243,7 +248,9 @@ body {
   width: 100%;
 }
 
-
+/*-----------------------------------*\
+  #ABOUT
+\*-----------------------------------*/
 
 .about {
   padding-block: 80px;
@@ -336,7 +343,9 @@ body {
   color: hsla(0, 0%, 100%, 0.5);
 }
 
-
+/*-----------------------------------*\
+  #FEATURES
+\*-----------------------------------*/
 
 .features {
   padding-block: 80px;
@@ -430,6 +439,9 @@ body {
   gap: 10px;
 }
 
+/*-----------------------------------*\
+  #CONTACT
+\*-----------------------------------*/
 
 .contact {
   padding-block: 80px;
@@ -521,7 +533,9 @@ textarea.input-field {
   font-style: normal;
 }
 
-
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
 
 footer {
   background: #292839;
@@ -608,6 +622,7 @@ footer .logo {
   z-index: 999;
   width: 150px;
   height: 150px;
+  margin-right: 18rem;
 }
 .lds-ripple div {
   position: absolute;
@@ -649,9 +664,15 @@ footer .logo {
     opacity: 0;
   }
 }
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
 
+/**
+ * responsive for larger than 450px screen
+ */
 
-@media (min-width: 450px) {
+@media (min-width: 320px) {
   /**
    * HERO
    */
@@ -659,7 +680,14 @@ footer .logo {
   .hero-form {
     position: relative;
   }
-
+  .lds-ripple {
+    display: inline-block;
+    position: relative;
+    z-index: 999;
+    width: 150px;
+    height: 150px;
+    margin-left: 13rem;
+  }
   .email-field {
     margin-bottom: 0;
     padding-right: 155px;
@@ -715,6 +743,9 @@ footer .logo {
   }
 }
 
+/**
+ * responsive for larger than 768px screen
+ */
 
 @media (min-width: 768px) {
   /**
@@ -792,7 +823,7 @@ footer .logo {
     position: relative;
     left: 2rem;
   }
- .loader {
+  .loader {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -800,7 +831,7 @@ footer .logo {
   }
   .lds-ripple {
     position: relative;
-    left: 10rem;
+    left: 3rem;
   }
   /**
    * HEADER
