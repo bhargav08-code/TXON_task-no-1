@@ -132,9 +132,6 @@ body {
   text-align: center;
 }
 
-/*-----------------------------------*\
-  #HEADER
-\*-----------------------------------*/
 
 .header {
   position: fixed;
@@ -192,9 +189,7 @@ body {
   color: #407bff;
 }
 
-/*-----------------------------------*\
-  #HERO
-\*-----------------------------------*/
+
 
 .hero {
   padding: 125px 0 80px;
@@ -248,9 +243,7 @@ body {
   width: 100%;
 }
 
-/*-----------------------------------*\
-  #ABOUT
-\*-----------------------------------*/
+
 
 .about {
   padding-block: 80px;
@@ -343,9 +336,7 @@ body {
   color: hsla(0, 0%, 100%, 0.5);
 }
 
-/*-----------------------------------*\
-  #FEATURES
-\*-----------------------------------*/
+
 
 .features {
   padding-block: 80px;
@@ -439,9 +430,6 @@ body {
   gap: 10px;
 }
 
-/*-----------------------------------*\
-  #CONTACT
-\*-----------------------------------*/
 
 .contact {
   padding-block: 80px;
@@ -533,9 +521,7 @@ textarea.input-field {
   font-style: normal;
 }
 
-/*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/
+
 
 footer {
   background: #292839;
@@ -663,13 +649,7 @@ footer .logo {
     opacity: 0;
   }
 }
-/*-----------------------------------*\
-  #MEDIA QUERIES
-\*-----------------------------------*/
 
-/**
- * responsive for larger than 450px screen
- */
 
 @media (min-width: 450px) {
   /**
@@ -735,9 +715,6 @@ footer .logo {
   }
 }
 
-/**
- * responsive for larger than 768px screen
- */
 
 @media (min-width: 768px) {
   /**
@@ -815,7 +792,16 @@ footer .logo {
     position: relative;
     left: 2rem;
   }
-
+ .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .lds-ripple {
+    position: relative;
+    left: 10rem;
+  }
   /**
    * HEADER
    */
